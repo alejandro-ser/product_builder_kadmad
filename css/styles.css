@@ -30,3 +30,11 @@ body {
 .label {
 	float: right;
 }
+
+.label-success {
+	float: none;
+}
+
+#accordion {
+	margin-top: 20px;
+}

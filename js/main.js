@@ -12,6 +12,7 @@ $(document).ready(function() {
 	var marquillaImgSrc = "";
 	
 	var valorTotal = 0;
+	var totalCarro = 0;
 
 	tipoMarco.click(function(event) {
 		marcoPrecio = $(this).attr('data-precio-marco');
@@ -19,7 +20,7 @@ $(document).ready(function() {
 		$("#valorMarco").html(marcoPrecio);
 		$("#imagenMarco").attr('src', 'imgs/'+marcoImgSrc);
 		valorTotal = +marcoPrecio + +lentePrecio + +marquillaPrecio;
-		$("#valor-total").html(valorTotal);		
+		$("#valor-total").html(valorTotal);
 		$("#dotMarco img").attr('src', 'imgs/'+ marcoImgSrc);
 		$("#imagenLente").parent(".item").removeClass('active');
 		$("#imagenMarquilla").parent(".item").removeClass('active');
@@ -52,4 +53,8 @@ $(document).ready(function() {
 		$("#imagenMarquilla").parent(".item").addClass('active');
 	});
 	
+	$(".btn-success").click(function(event) {
+		totalCarro = $("#valor-total").html();
+		$("#totalCarro").html(totalCarro);
+	});
 });

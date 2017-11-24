@@ -62,19 +62,16 @@
 
   				<h3>Total: <span class="label label-primary">$<i id="valor-total">0</i></span></h3>
   				<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#carritoModal">Añadir al carrito <i class="fa fa-cart-plus"></i></button>
-  				<div id="items">
-  					<h4>Diseño patas: <span class="label label-warning">$<i id="valorMarco">0</i></span></h4>
-  					<h4>Marco: <span class="label label-danger">$<i id="valorLente">0</i></span></h4>
-  					<h4>Lentes: <span class="label label-info">$<i id="valorMarquilla">0</i></span></h4>
-  				</div>
 
   				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					  <div class="panel panel-default">
 					    <div class="panel-heading" role="tab" id="headingOne">
 					      <h4 class="panel-title">
 					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#tipoMarco" aria-expanded="true" aria-controls="tipoMarco">
-					          Elige un diseño para las patas
+					        	<i class="fa fa-angle-down"></i>
+					          Elige un diseño para las patas:
 					        </a>
+					        <span class="label label-warning">$<i id="valorMarco">0</i></span>
 					      </h4>
 					    </div>
 					    <div id="tipoMarco" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -120,8 +117,10 @@
 					    <div class="panel-heading" role="tab" id="headingTwo">
 					      <h4 class="panel-title">
 					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#tipoLente" aria-expanded="false" aria-controls="tipoLente">
-					          Elige el tipo de marco
+					        	<i class="fa fa-angle-down"></i>
+					          Elige el tipo de marco:
 					        </a>
+					        <span class="label label-danger">$<i id="valorLente">0</i></span>
 					      </h4>
 					    </div>
 					    <div id="tipoLente" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -150,8 +149,10 @@
 					    <div class="panel-heading" role="tab" id="headingThree">
 					      <h4 class="panel-title">
 					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#tipoMarquilla" aria-expanded="false" aria-controls="tipoMarquilla">
-					          Elige el tipo de lentes
+					        	<i class="fa fa-angle-down"></i>
+					          Elige el tipo de lentes:
 					        </a>
+					        <span class="label label-info">$<i id="valorMarquilla">0</i></span>
 					      </h4>
 					    </div>
 					    <div id="tipoMarquilla" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
@@ -187,7 +188,8 @@
 		      </div>
 		      <div class="modal-body text-center">
 		      	<i class="fa fa-4x fa-cart-plus"></i>
-		        <h2>Se agrego el producto a tu carrito.</h2>
+		      	<h2>Total carro: <span class="label label-success">$<i id="totalCarro">0</i></span></h2>
+		        <h3>Se agrego el producto a tu carrito.</h3>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-success" data-dismiss="modal">Continuar conpra <i class="fa fa-cart-plus"></i></button>
